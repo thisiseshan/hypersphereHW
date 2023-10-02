@@ -28,7 +28,8 @@ def plotter(dimensions, fractions, calculated_fractions, title):
 
 
 st.title('Hypersphere Visualization')
-st.subheader('DS5220 Homework 1 Question 7c')
+st.subheader('by Eshan Arora')
+st.subheader('for DS5220 Homework 1 Question 7c')
 st.sidebar.header('Parameters')
 n = st.sidebar.slider('Number of Points (n)', 50, 2000, 1000, 50)
 r = st.sidebar.slider('Radius (r)', 1, 100000, 1, 1)
