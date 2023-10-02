@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import math
-from scipy.special import gamma
 import plotly.express as px
 
 def hyperviz(dimensions, r, n):
@@ -13,7 +12,7 @@ def hyperviz(dimensions, r, n):
         fraction = np.sum(distances <= r) / n
         fractions.append(fraction)
 
-        calculated_fraction = np.pi ** (d * 0.5) / (2 ** d * gamma(d * 0.5 + 1))
+        calculated_fraction = np.pi ** (d * 0.5) / (2 ** d * math.gamma(d * 0.5 + 1))
         calculated_fractions.append(calculated_fraction)
 
     return fractions, calculated_fractions
