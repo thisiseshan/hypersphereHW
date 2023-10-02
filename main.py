@@ -37,3 +37,5 @@ dimensions = range(1, st.sidebar.slider('Max Dimension', 10, 200, 100, 10) + 1)
 
 fractions, calculated_fractions = hyperviz(dimensions, r, n)
 plotter(dimensions, fractions, calculated_fractions, f"Plot: r={r}, n={n}")
+
+st.subheader('Inferences')
