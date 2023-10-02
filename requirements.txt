@@ -1,5 +1,6 @@
 streamlit
 plotly
-scipy
 numpy
 math
+scikit-learn
+scipy
